@@ -1,13 +1,13 @@
- # sukmahd.github.io
+#_sukmahd.github.io_
 
- ##_1. About This Site:_
-* * Website untuk weekly project
+##_About This Site:_
+* Website untuk weekly project
 
- ##_2. Used Tags & Syntaxes:_
- * html
- * head
- * title
- * body
+##_Used Tags & Syntaxes:_
+* html
+* head
+* title
+* body
 
- ##_3. About Me:_
- * hallo saya sukma
+##_About Me:_
+* hallo saya sukma
