@@ -21,6 +21,8 @@ header{
 nav{
  float: right;
  height:100%;
+ font-family: 'Inconsolata', monospace;
+ font-size: 24px;
 }
 
 ul{
@@ -80,6 +82,14 @@ footer{
   top:100px;
   background-color: #c5ded7;
   color: #45b29a;
+}
+
+#logo{
+  padding: 25px;
+  float: left;
+  font-size: 30px;
+  font-family: 'Lobster', cursive;
+
 }
 
 #box-top{
