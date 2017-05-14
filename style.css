@@ -1,0 +1,46 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 1px solid;
+}
+
+nav{
+ clear: both;
+}
+
+ul{
+
+}
+
+li{
+  display: inline-block;
+}
+
+h3,h5{
+  text-align: center;
+}
+
+#box-top{
+  width: 100%;
+}
+
+#box-middle{
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+#box-bottom{
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.box{
+  background-color: yellow;
+  width: 300px;
+  height: 300px;
+  display: inline-block;
+  margin:50px;
+}
