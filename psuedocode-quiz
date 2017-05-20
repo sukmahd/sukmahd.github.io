@@ -1,0 +1,53 @@
+BACA dan SIMPAN 'nama'
+IF 'nama' sama dengan ' ':
+	'nama' di assign dengan 'rahasia'
+ELSE
+	Tampilkan 'halo [nama]'
+END IF
+
+CREATE OBJECT 'soal1':
+ key soal: 'Apa kepanjangan dari HTML',
+ key jawaban: 'a',
+ key pilihan: 'a. hypertext markup language/ b. HaTi Mark language/ c. Hasalam'
+END OBJECT
+
+CREATE OBJECT 'soal2':
+ key soal: 'Apa Kepanjangan dari CSS ? ',
+ key jawaban: 'c',
+ key pilihan: 'a. CasandraStyleSheet/ b. CarisaStyleSheet/ c. CascandingStyleSheet'
+END OBJECT
+
+CREATE OBJECT 'soal3':
+ key soal: 'Apa Kepanjangan dari JS ?',
+ key jawaban: 'a',
+ key pilihan: 'a. JavaScript/ b. JavaShop/ c. JanganSalah'
+END OBJECT
+
+CREATE OBJECT 'soal4':
+ key soal: 'Siapa nama instruktur di phase-0 ? ',
+ key jawaban: 'b',
+ key pilihan: 'a. Ariel/ b. Ryan/ c. Mukidi'
+END OBJECT
+
+SIMPAN OBJECT soal1 sampai soal4 dalam 'arrSoal'
+
+CREATE FUNCTION panggilSoal() dengan parameter 'nama' dan 'soal':
+buat variable 'count'
+TAMPILKAN 'Hallo selamat datang di quiz interaktif ini :)'
+TAMPILKAN 'Silahkan jawab 4 soal berikut'
+
+FOR setiap pertambahan 'index' dari 0 sampai dengan 'arrSoal' length:
+	TAMPILKAN soal berdasarkan index
+	TAMPILKAN pilihan berdasarkan index
+	BACA dan SIMPAN 'jawaban'
+	IF 'jawaban' sama dengan object 'jawaban':
+		TAMPILKAN 'anda benar'
+		count ditambah 1
+	ELSE:
+		'jawaban anda salah'
+	ENDIF
+ENDFOR
+return count
+ENDFUNCTION
+ 
+TAMPILKAN 'anda berhasil menjawab  [count] soal'
