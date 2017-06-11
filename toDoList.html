@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="toDoList.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+
+    <div id="logo">
+      <a href='index.html'>My Website</a>
+    </div>
+    <nav>
+    </nav>
+  </header>
+
+<section>
+  <!-- box top -->
+  <div id="box-top">
+    <div id="text-welcome">
+      <h1>Hi! i'm Sukma</h1>
+      <h2>future full-stack web Delevoper :)</h2>
+    </div>
+  </div>
+  <!-- box middle -->
+  <div id="box-middle">
+    <div class="box">
+      <div id="main" class="header">
+        <h2>My To Do List</h2>
+        <input type="text" id="listInput" placeholder="Input List..">
+        <span onclick="newElement()" class="addBtn">Add</span>
+      </div>
+
+      <ul id='listUL'>
+        <li>Week-1</li>
+        <li class="checked">week-2</li>
+        <li>week-3</li>
+        <li>week-4</li>
+      </ul>
+    </div>
+  </div>
+<section>
+  <script src="toDoList.js"></script>
+</body>
+</html>

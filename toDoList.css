@@ -1,0 +1,198 @@
+body{
+  margin: 0;
+  min-width: 250px;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+header{
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  color: #45b29a;
+  border-bottom: 1px solid #c5ded7;
+  overflow-y: auto;
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 10000;
+}
+
+nav{
+ float: right;
+ height:100%;
+ font-family: 'Inconsolata', monospace;
+ font-size: 24px;
+}
+
+h1{
+  font-size: 68px;
+  line-height: 1.3;
+  letter-spacing: -2.5px;
+  font-family: 'Lobster', cursive;
+  font-weight: 700;
+}
+
+h2{
+  font-size: 180%;
+font-weight: 400;
+font-family: 'Inconsolata', monospace;
+}
+
+
+section{
+  position: relative;
+  top:100px;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+ul li{
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: #c5ded7;
+  font-size: 15px;
+  transition: 0.5s;
+  color: #1e836c;
+  text-align: left;
+
+  /*membuat list unselect*/
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/*membuat odd list item berbeda warna*/
+ul li:nth-child(odd)
+{
+  background: white;
+}
+
+/*untuk warna saat d hover*/
+ul li:hover{
+  background: #92dbc7;
+  color: white;
+}
+
+/*saat di checked*/
+ul li.checked{
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+/*add 'checke' mark saat di click*/
+ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+.close{
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover{
+  background-color: #1e836c;
+  color:white;
+}
+
+.header{
+  background-color: #1e836c;
+  padding: 30px 35px;
+  color: white;
+  text-align: center;
+}
+
+/*untuk clear after header*/
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+input{
+  border: none;
+  width: 75%;
+  padding: 8px;
+  float: left;
+  font-size: 14px;
+}
+
+/*styling add button*/
+.addBtn{
+  padding: 8px;
+  width: 25%;
+  background: #92dbc7;
+  color: #1e836c;
+  float: left;
+  text-align: center;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.addBtn:hover{
+  background-color: #196856;
+  color: white;
+
+}
+
+#logo{
+  padding: 25px;
+  float: left;
+  font-size: 30px;
+  font-family: 'Lobster', cursive;
+
+}
+
+
+#box-top{
+  width: 100%;
+  background-color: #c5ded7;
+  color: #45b29a;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#text-welcome{
+  padding-top: 200px;
+  width: auto;
+  height: 570px;
+}
+
+#box-middle{
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.box{
+  background-color: white;
+  width: 700px;
+  display: inline-block;
+  margin:50px;
+  border: 1px solid #45b29a;
+}
